@@ -33,29 +33,99 @@ video{
     height: 100%;
 }
 
+.b1{
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+
+}
 
 header{
     display: flex;
     padding: 5px;
     background: #fafaff;
-    height: 100px;
+    height: 80px;
     position: relative;
     z-index: 2;
 }
 
-.titulo {
-    font-size: 62px;
-    font-family: fantasy;
-    margin-top: 20px;
+.contenido{
+    position: relative;
+    z-index: 2;
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.contenido .card{
+    position: relative;
+    max-width: 300px;
+    height: 150px;
+    background-color: white;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgb(0,0,0,0.5);
+    transition: 0.4s ease-in-out;
+}
+
+.contenido .card:hover
+{
+    height: 300px;
+}
+
+.contenido .card .imgcard{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgb(0,0,0,0.5);
+}
+
+.contenido .card .imgcard img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.contenido .card .contcard{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    font-family: monospace;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.contenido .card:hover .contcard{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
 
 }
 
+.titulo {
+    color: rgb(223, 202, 21);
+    font-size: 68px;
+    font-family: fantasy;
+    font-style: italic;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(16, 77, 209);
+    margin-top: 5px;
+}
 
 .FondoEnc{
-    width: 100px;
-    height: 100px;
+    margin-top: -8px;
+    width: 90px;
+    height: 90px;
 }
-
 
 .capa2{
     position: absolute;
